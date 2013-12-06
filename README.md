@@ -30,7 +30,8 @@ If you choose to create you own folder, follow the next steps, otherwise skip th
 1. Create a new folder, let's call it `FullScreenMario`, and a `lib` folder inside it.
 2. Copy the jar file of the adapter `LS_FullScreenMario_Demo_Adapters.jar`, compiled in the previous section, in the newly created `lib` folder.
 3. Create an `adapters.xml` file inside the `FullScreenMario` folder and use the following content (this is an example configuration, you can modify it to your liking):
-```xml      
+
+```xml
 <?xml version="1.0"?>
 
 <!-- Mandatory. Define an Adapter Set and its unique ID. -->
