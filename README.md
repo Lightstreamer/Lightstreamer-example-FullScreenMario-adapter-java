@@ -70,7 +70,7 @@ Please test your Adapter with the [client](https://github.com/Weswit/Lightstream
 
 ## Clients using this Adapter ##
 
-* [FullScreenMario Demo Client for JavaScript]()
+* [FullScreenMario Demo Client for JavaScript](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-client-javascript)
 
 ## Related projects ##
 
