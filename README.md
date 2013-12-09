@@ -11,7 +11,7 @@ The adapter receives input commands from Lightstreamer server, which forwards me
 
 # Build #
 
-If you want to skip the build process of this Adapter please note that in the [deploy release]() of this project you can find the "deploy.zip" file that contains a ready-made deployment resource for the Lightstreamer server. <br>
+If you want to skip the build process of this Adapter please note that in the [deploy release](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-adapter-java/releases) of this project you can find the "deploy.zip" file that contains a ready-made deployment resource for the Lightstreamer server. <br>
 Otherwise follow these steps:
 
 * Get the `ls-adapter-interface.jar`, file from the [latest Lightstreamer distribution](http://www.lightstreamer.com/download).
@@ -24,7 +24,7 @@ Otherwise follow these steps:
 
 # Deploy #
 
-You have to create a specific folder to deploy the FullScreenMario Demo Adapters otherwise get the ready-made `FullScreenMario` deploy folder from `deploy.zip` of the [latest release]() of this project.<br>
+You have to create a specific folder to deploy the FullScreenMario Demo Adapters otherwise get the ready-made `FullScreenMario` deploy folder from `deploy.zip` of the [latest release](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-adapter-java/releases) of this project.<br>
 If you choose to create you own folder, follow the next steps, otherwise skip them. 
 
 1. Create a new folder, let's call it `FullScreenMario`, and a `lib` folder inside it.
