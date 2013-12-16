@@ -59,7 +59,7 @@ If you choose to create you own folder, follow the next steps, otherwise skip th
 
 Now your `FullScreenMario` folder is ready to be deployed in the Lightstreamer server, please follow these steps:<br>
 
-1. Make sure you have installed Lightstreamer Server, as explained in the GETTING_STARTED.TXT file in the installation home directory.
+1. Download and install Lightstreamer Vivace (make sure you use Vivace edition, otherwise you will see a limit on the event rate; Vivace comes with a free non-expiring demo license for 20 connected users), as explained in the GETTING_STARTED.TXT file in the installation home directory.
 2. Make sure that Lightstreamer Server is not running.
 3. Copy the `FullScreenMario` directory and all of its files to the `adapters` subdirectory in your Lightstreamer Server installation home directory.
 4. Lightstreamer Server is now ready to be launched.
