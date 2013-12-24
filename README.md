@@ -1,5 +1,5 @@
 # Lightstreamer - FullScreenMario Demo - Java Adapter #
-<!-- START DESCRIPTION FullScreenMario Demo -->
+<!-- START DESCRIPTION lightstreamer-example-fullscreenmario-adapter-java -->
 
 This project includes the resources needed to develop the Metadata and Data Adapters for the [FullScreenMario Demo]() that is pluggable into Lightstreamer Server. Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.
 The <b>FullScreenMario Demo</b> implements a multiplayer HTML5 remake of the original Super Mario Brothers.<br>
@@ -9,7 +9,7 @@ The project is comprised of source code and a deployment example.
 ## Java Data Adapter and MetaData Adapter ##
 A Java Adapter implementing both the [SmartDataProvider](http://www.lightstreamer.com/docs/adapter_java_api/com/lightstreamer/interfaces/data/SmartDataProvider.html) interface and the [MetadataProviderAdapter](http://www.lightstreamer.com/docs/adapter_java_api/com/lightstreamer/interfaces/metadata/MetadataProviderAdapter.html) interface, to publish data into Lightstreamer server with real time information about the movement of every player.
 The adapter receives input commands from Lightstreamer server, which forwards messages arrived from clients to the adapter notifying each player position and last command. These messages are then published to all players.
-<!-- END DESCRIPTION FullScreenMario Demo -->
+<!-- END DESCRIPTION lightstreamer-example-fullscreenmario-adapter-java -->
 
 # Build #
 
