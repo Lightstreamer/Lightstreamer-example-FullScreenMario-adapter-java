@@ -1,7 +1,7 @@
 # Lightstreamer - FullScreenMario Demo - Java Adapter #
 <!-- START DESCRIPTION lightstreamer-example-fullscreenmario-adapter-java -->
 
-This project includes the resources needed to develop the Metadata and Data Adapters for the [FullScreenMario Demo]() that is pluggable into Lightstreamer Server. Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.
+This project includes the resources needed to develop the Metadata and Data Adapters for the [FullScreenMario Demo](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-client-javascript) that is pluggable into Lightstreamer Server. Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.
 The <b>FullScreenMario Demo</b> implements a multiplayer HTML5 remake of the original Super Mario Brothers.<br>
 <br>
 The project is comprised of source code and a deployment example.
