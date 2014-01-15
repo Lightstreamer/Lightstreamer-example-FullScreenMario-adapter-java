@@ -70,18 +70,17 @@ Please test your Adapter with the [client](https://github.com/Weswit/Lightstream
 
 # See Also #
 
-## Clients using this Adapter ##
+## Clients Using This Adapter ##
 <!-- START RELATED_ENTRIES -->
 
 * [Lightstreamer - FullScreenMario Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-client-javascript)
 
 <!-- END RELATED_ENTRIES -->
 
-## Related projects ##
+## Related Projects ##
 
 * [Lightstreamer - Room-Ball Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-RoomBall-client-javascript#lightstreamer-room-ball-demo-for-javascript-client)
 
 # Lightstreamer Compatibility Notes #
 
 - Compatible with Lightstreamer SDK for Java Adapters since 5.1
-
