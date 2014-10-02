@@ -5,27 +5,27 @@ The *Full-Screen Mario Demo* implements a multiplayer, HTML5 remake of the origi
 
 This project shows the Data Adapter and Metadata Adapters for the *Full-Screen Mario Demo* and how they can be plugged into Lightstreamer Server.
 
-As example of a client using this adapter, you may refer to the [Lightstreamer - FullScreenMario Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-client-javascript).
+As an example of a client using this adapter, you may refer to the [Lightstreamer - FullScreenMario Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-client-javascript).
 
 ## Details
 This project includes the implementation of the [SmartDataProvider](http://www.lightstreamer.com/docs/adapter_java_api/com/lightstreamer/interfaces/data/SmartDataProvider.html) interface and the [MetadataProviderAdapter](http://www.lightstreamer.com/docs/adapter_java_api/com/lightstreamer/interfaces/metadata/MetadataProviderAdapter.html) interface for the *Full-Screen Mario Demo*. Please refer to [General Concepts](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.
 
 ### Java Data Adapter and MetaData Adapter
-The Data Adapter publishes data into Lightstreamer Server with real time information about the movement of every player.
+The Data Adapter publishes data into Lightstreamer Server with real-time information about the movement of every player.
 The Metadata Adapter receives input commands from Lightstreamer server, which forwards messages arrived from clients to the Data Adapter, notifying each player position and last command. These messages are then published to all players.
 <!-- END DESCRIPTION lightstreamer-example-fullscreenmario-adapter-java -->
 
 ## Install
-If you want to install a version of this demo in your local Lightstreamer Server, follow these steps.
-* Download Lightstreamer Server Vivace (make sure you use Vivace edition, otherwise you will see a limit on the event rate; Lightstreamer Server comes with a free non-expiring demo license for 20 connected users) from [Lightstreamer Download page](http://www.lightstreamer.com/download.htm), and install it, as explained in the `GETTING_STARTED.TXT` file in the installation home directory.
-* Get the `deploy.zip` file of the [latest release](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-adapter-java/releases), unzip it and copy the just unzipped `FullScreenMario` folder into the `adapters` folder of your Lightstreamer Server installation.
+If you want to install a version of this demo in your local Lightstreamer Server, follow these steps:
+* Download Lightstreamer Server Vivace (make sure you use Vivace edition, otherwise, you will see a limit on the event rate; Lightstreamer Server comes with a free non-expiring demo license for 20 connected users) from [Lightstreamer Download page](http://www.lightstreamer.com/download.htm), and install it, as explained in the `GETTING_STARTED.TXT` file in the installation home directory.
+* Get the `deploy.zip` file of the [latest release](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-adapter-java/releases), unzip it, and copy the just unzipped `FullScreenMario` folder into the `adapters` folder of your Lightstreamer Server installation.
 * Launch Lightstreamer Server.
 * Test the Adapter, launching the client listed in [Clients Using This Adapter](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-adapter-java#clients-using-this-adapter).
 
 ## Build 
-To build your own version of `LS_FullScreenMario_Demo_Adapters.jar`, instead of using the one provided in the `deploy.zip` file from the [Install](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-adapter-java#install) section above, follow these steps.
+To build your own version of `LS_FullScreenMario_Demo_Adapters.jar`, instead of using the one provided in the `deploy.zip` file from the [Install](https://github.com/Weswit/Lightstreamer-example-FullScreenMario-adapter-java#install) section above, follow these steps:
 * Clone this project.
-*  Get the `ls-adapter-interface.jar` file from the [latest Lightstreamer distribution](http://www.lightstreamer.com/download), and copy it into the `lib` directory.
+* Get the `ls-adapter-interface.jar` file from the [latest Lightstreamer distribution](http://www.lightstreamer.com/download), and copy it into the `lib` directory.
 * Build the jar `LS_FullScreenMario_Demo_Adapters.jar` with commands like these:
 ```sh
  >javac -source 1.7 -target 1.7 -nowarn -g -classpath lib/ls-adapter-interface.jar -sourcepath src/ -d tmp_classes src/com/lightstreamer/adapters/fullscreenmario_adapter/DataAdapter.java
