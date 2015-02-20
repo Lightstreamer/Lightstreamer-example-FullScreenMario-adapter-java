@@ -15,6 +15,43 @@ The Data Adapter publishes data into Lightstreamer Server with real-time informa
 The Metadata Adapter receives input commands from Lightstreamer server, which forwards messages arrived from clients to the Data Adapter, notifying each player position and last command. These messages are then published to all players.
 <!-- END DESCRIPTION lightstreamer-example-fullscreenmario-adapter-java -->
 
+### The Adapter Set Configuration
+
+This Adapter Set is configured and will be referenced by the clients as `MARIO`. 
+
+The `adapters.xml` file for the *Full-Screen Mario Demo*, should look like:
+
+```xml      
+<?xml version="1.0"?>
+
+<!-- Mandatory. Define an Adapter Set and its unique ID. -->
+<adapters_conf id="MARIO">
+
+    <!-- Mandatory. Define the Metadata Adapter. -->
+    <metadata_provider>
+
+        <!-- Mandatory. Java class name of the adapter. -->
+        <adapter_class>fullscreenmario_adapter.MetadataAdapter</adapter_class>
+
+
+    </metadata_provider>
+
+    <!-- Mandatory. Define a Data Adapter. -->
+    <data_provider name="USERS">
+
+        <!-- Mandatory. Java class name of the adapter. -->
+        <adapter_class>fullscreenmario_adapter.DataAdapter</adapter_class>
+
+    </data_provider>
+
+</adapters_conf>
+```
+
+<i>NOTE: not all configuration options of an Adapter Set are exposed by the file suggested above. 
+You can easily expand your configurations using the generic template, `DOCS-SDKs/sdk_adapter_java_inprocess/doc/adapter_conf_template/adapters.xml`, as a reference.</i><br>
+<br>
+Please refer [here](http://www.lightstreamer.com/docs/base/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.
+
 ## Install
 If you want to install a version of this demo in your local Lightstreamer Server, follow these steps:
 * Download Lightstreamer Server Vivace (make sure you use Vivace edition, otherwise, you will see a limit on the event rate; Lightstreamer Server comes with a free non-expiring demo license for 20 connected users) from [Lightstreamer Download page](http://www.lightstreamer.com/download.htm), and install it, as explained in the `GETTING_STARTED.TXT` file in the installation home directory.
