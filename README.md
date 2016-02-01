@@ -65,9 +65,9 @@ To build your own version of `LS_FullScreenMario_Demo_Adapters.jar`, instead of 
 * Get the `ls-adapter-interface.jar` file from the [latest Lightstreamer distribution](http://www.lightstreamer.com/download), and copy it into the `lib` directory.
 * Build the jar `LS_FullScreenMario_Demo_Adapters.jar` with commands like these:
 ```sh
- >javac -source 1.7 -target 1.7 -nowarn -g -classpath lib/ls-adapter-interface.jar -sourcepath src/ -d tmp_classes src/fullscreenmario_adapter/DataAdapter.java
- 
- >jar cvf LS_FullScreenMario_Demo_Adapters.jar -C tmp_classes fullscreenmario_adapter
+ > mkdir tmp_classes
+ > javac -source 1.7 -target 1.7 -nowarn -g -classpath lib/ls-adapter-interface.jar -sourcepath src/ -d tmp_classes src/fullscreenmario_adapter/DataAdapter.java
+ > jar cvf LS_FullScreenMario_Demo_Adapters.jar -C tmp_classes fullscreenmario_adapter
 ```
 * Stop Lightstreamer Server; copy the just compiled `LS_FullScreenMario_Demo_Adapters.jar` in the `adapters/FullScreenMario/lib` folder of your Lightstreamer Server installation; restart Lightstreamer Server.
 
