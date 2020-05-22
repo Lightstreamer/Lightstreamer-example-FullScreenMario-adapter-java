@@ -54,7 +54,7 @@ Please refer [here](http://www.lightstreamer.com/docs/base/Lightstreamer/DOCS-SD
 
 ## Install
 If you want to install a version of this demo in your local Lightstreamer Server, follow these steps:
-* Download Lightstreamer Server Vivace (make sure you use Vivace edition, otherwise, you will see a limit on the event rate; Lightstreamer Server comes with a free non-expiring demo license for 20 connected users) from [Lightstreamer Download page](http://www.lightstreamer.com/download.htm), and install it, as explained in the `GETTING_STARTED.TXT` file in the installation home directory.
+* Download Lightstreamer Server (Lightstreamer Server comes with a free non-expiring demo license for 20 connected users; this should be preferred to using COMMUNITY edition, otherwise you would see a limit on the event rate) from [Lightstreamer Download page](http://www.lightstreamer.com/download.htm), and install it, as explained in the `GETTING_STARTED.TXT` file in the installation home directory.
 * Get the `deploy.zip` file of the [latest release](https://github.com/Lightstreamer/Lightstreamer-example-FullScreenMario-adapter-java/releases), unzip it, and copy the just unzipped `FullScreenMario` folder into the `adapters` folder of your Lightstreamer Server installation.
 * Launch Lightstreamer Server.
 * Test the Adapter, launching the client listed in [Clients Using This Adapter](https://github.com/Lightstreamer/Lightstreamer-example-FullScreenMario-adapter-java#clients-using-this-adapter).
