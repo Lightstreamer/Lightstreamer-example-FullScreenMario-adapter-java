@@ -54,7 +54,7 @@ Please refer [here](https://lightstreamer.com/docs/ls-server/latest/General%20Co
 
 ## Install
 
-If you want to install a version of this demo in your local Lightstreamer Server, follow these steps:
+If you want to install a version of this demo on your local Lightstreamer Server, follow these steps:
 * Download Lightstreamer Server (Lightstreamer Server comes with a free non-expiring demo license for 20 connected users; this should be preferred to using COMMUNITY edition, otherwise you would see a limit on the event rate) from [Lightstreamer Download page](https://lightstreamer.com/download/), and install it, as explained in the `GETTING_STARTED.TXT` file in the installation home directory.
 * Get the `deploy.zip` file of the [latest release](https://github.com/Lightstreamer/Lightstreamer-example-FullScreenMario-adapter-java/releases), unzip it, and copy the just unzipped `FullScreenMario` folder into the `adapters` folder of your Lightstreamer Server installation.
 * Launch Lightstreamer Server.
@@ -62,10 +62,10 @@ If you want to install a version of this demo in your local Lightstreamer Server
 
 ## Build
 
-To build your own version of `Lexample-FullScreenMario-adapter-java-0.0.1-SNAPSHOT.jar`, instead of using the one provided in the `deploy.zip` file from the [Install](https://github.com/Lightstreamer/Lightstreamer-example-FullScreenMario-adapter-java#install) section above, you have two options:
+To build your own version of `example-full-screen-mario-adapter-java-x.y.x.jar`, instead of using the one provided in the `deploy.zip` file from the [Install](https://github.com/Lightstreamer/Lightstreamer-example-FullScreenMario-adapter-java#install) section above, you have two options:
 either use [Maven](https://maven.apache.org/) (or other build tools) to take care of dependencies and building (recommended) or gather the necessary jars yourself and build it manually.
 
-For the sake of simplicity only the Maven case is detailed here.
+For the sake of simplicity, only the Maven case is detailed here.
 
 ### Maven
 
@@ -75,7 +75,6 @@ Assuming Maven is installed and available in your path you can build the demo by
 ```sh 
  mvn install dependency:copy-dependencies 
 ```
-
 
 ## See Also
 
