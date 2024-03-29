@@ -19,7 +19,7 @@ The Metadata Adapter receives input commands from Lightstreamer server, which fo
 
 This Adapter Set is configured and will be referenced by the clients as `MARIO`. 
 
-The `adapters.xml` file for the *Full-Screen Mario Demo*, should look like:
+The `adapters.xml` file for the *Full-Screen Mario Demo*, should look like this:
 
 ```xml      
 <?xml version="1.0"?>
@@ -31,8 +31,7 @@ The `adapters.xml` file for the *Full-Screen Mario Demo*, should look like:
     <metadata_provider>
 
         <!-- Mandatory. Java class name of the adapter. -->
-        <adapter_class>fullscreenmario_adapter.MetadataAdapter</adapter_class>
-
+        <adapter_class>com.lightstreamer.adapters.fullscreenmario_adapter.MetadataAdapter</adapter_class>
 
     </metadata_provider>
 
@@ -40,7 +39,7 @@ The `adapters.xml` file for the *Full-Screen Mario Demo*, should look like:
     <data_provider name="USERS">
 
         <!-- Mandatory. Java class name of the adapter. -->
-        <adapter_class>fullscreenmario_adapter.DataAdapter</adapter_class>
+        <adapter_class>com.lightstreamer.adapters.fullscreenmario_adapter.DataAdapter</adapter_class>
 
     </data_provider>
 
