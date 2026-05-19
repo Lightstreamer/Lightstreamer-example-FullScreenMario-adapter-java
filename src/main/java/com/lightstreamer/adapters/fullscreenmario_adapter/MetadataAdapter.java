@@ -56,14 +56,7 @@
      }
  
      public String[] getSchema(String user, String sessionID, String group, String schema) throws ItemsException, SchemaException {
-         if (group.startsWith(DataAdapter.ITEM_NAME_USER_LIST_PREFIX))
-             return new String [] { "key", "command" };
- 
-         return new String [] {
-                 DataAdapter.FIELD_NAME_INVOLVED_KEY, DataAdapter.FIELD_NAME_UP_OR_DOWN,
-                 DataAdapter.FIELD_NAME_X_LOCATION, DataAdapter.FIELD_NAME_Y_LOCATION,
-                 DataAdapter.FIELD_NAME_POWER,
-                 DataAdapter.FIELD_NAME_X_WINDOW_OFFSET, DataAdapter.FIELD_NAME_Y_WINDOW_OFFSET };
+         return schema.split(" ");
      }
  
  
